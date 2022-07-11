@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link href="css/contact.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/logo-500_x_100.png" alt="logo">
+        <!--I used a list with links for my navbar, each section brings you to another page-->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="about.html" class="about">About</a></li>
+                <li><a href="menu.html" class="menu">Menu</a></li>
+                <li><a href="contact.html" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="light">
+        <img src="images/dylan-ferreira-0cv08T71zL0-unsplash.jpg" alt="ice cream sign">
+    </section>
+    <div class="contactpage">
+        <section class="contactus">
+            <h1>Contact Us</h1>
+            <h2>Do you have questions?</h2>
+            <p>Fill out this short form below and we'll respond within 2-3 business days. If you would like to speak to a representative over the phone call us, you can also find our store number below.</p>
+            <h3>Call us:</h3>
+            <p>613-480-1970</p>
+        </section>
+        <!--Form is fully functional to type and press the button at the end-->
+        <section class="form">
+            <form>
+                <label for="firstname">First name:</label><br>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Last name:</label><br>
+                <input type="text" id="lastname" name="lastname"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit" class="button">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
