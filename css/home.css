@@ -1,0 +1,209 @@
+/*Reset code to get rid of automatic paddings and margins*/
+body{
+    margin: 0;
+    padding:0;
+}
+.background img{
+    width: 100%;
+    height: 1180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.background{
+    height: 5px;
+}
+a:link, a:visited{
+   text-decoration: none; 
+   color: black;
+}
+.navbar img{
+    width: 30%;
+}
+/*The navbar remains the same accross all pages*/
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    background-color: #d1c0a8;
+}
+.home{
+    border: 1px solid grey;
+    background-color: #7FFAF1;
+    border-radius: 3rem;
+    padding: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: all .2s ease-in-out; 
+}
+.about{
+    border: 1px solid grey;
+    background-color: #A2E02D;
+    border-radius: 3rem;
+    padding: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.menu{
+    border: 1px solid grey;
+    background-color:#4700F2;
+    border-radius: 3rem;
+    padding: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.contact{
+    border: 1px solid grey;
+    background-color: #F043A5;
+    border-radius: 3rem;
+    padding: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+ul{
+    display: flex; 
+    list-style: none;
+}
+li{
+    padding-right: 4em;
+    transition: all .2s ease-in-out;
+}
+li:hover{
+    transform: scale(1.1);
+}
+a{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-decoration: underline;
+    font-size: 25px;
+}
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 2rem;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hours{
+    text-align: center;
+    padding-bottom: 20rem;
+}
+.hours h1{
+    padding-top: 8rem;
+}
+.welcome{
+    display:flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+.welcome2{
+    border: 1px solid gray;
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+.welcome p{
+    font-size: 18px;
+    text-align: center;
+}
+.welcome2 img{
+    float: left;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+i{
+    font-size: 30px;
+    animation: point infinite ease-in-out 2s alternate;
+    position: relative;
+}
+.location p{
+    padding-left:25rem ;
+}
+.location i, .location p{
+    display: inline;
+}
+@keyframes point{
+    0%{
+        left:0;
+    }
+    50%{
+        left: 5%;
+    }
+    100%{
+        left: 0;
+    }
+}
+iframe{
+    padding-left: 1rem;
+    border: none;
+}
+/*I added media queries so that its easier to style for a different screen size*/
+@media screen and (max-width: 920px) {
+    body{
+        background-color: #fafafa;
+        padding: 0;
+        margin: 0;
+    }
+    .background img{
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position:relative;
+        top: 36rem;
+    }
+    .navbar img{
+        width: 450px;  
+    }
+    .navbar{
+        display: block;
+        text-align: center;
+    }
+    ul{
+        display:grid;
+    }
+    /*A transition was added to the navbar, it will grow when being hover. This makes it more visually appealing and also makes it more clear*/
+    li{
+        padding-bottom: 5rem;
+        transition: all .2s ease-in-out;
+    }
+    li:hover{
+        transform: scale(1.1);
+    }
+    .hours{
+        position: relative;
+        bottom: 2rem;
+    }
+    .hours h1{
+        font-size: 30px;
+    }
+    .hours p{
+        font-size: 20px;
+    }
+    .welcome{
+        display: grid;
+        position: relative;
+        bottom: 230px;
+    }
+    .location i, .location p{
+        display: inline-block;
+        padding: 2rem;
+    }
+    /*Rotated the image so the arrow is facing the map*/
+    i{
+        transform: rotate(90deg);
+    }
+    iframe{
+        padding-top: 1rem;
+        width: 100%;
+        height: 400px;
+    }
+  }

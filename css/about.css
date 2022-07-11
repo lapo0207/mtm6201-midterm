@@ -1,0 +1,188 @@
+/*I added to separate media queries, making this page responsive for different sizes was pretty difficult so the media queries where easier to help style and separate both chuncks of code*/
+@media screen and (min-width: 920px){
+    body{
+        margin: 0;
+        background-color: #fafafa;
+        padding-bottom: 2rem;
+    } 
+    a:link, a:visited{
+        text-decoration: none; 
+        color: black;
+    }
+    .navbar img{
+    width: 30%;
+    }
+    /*Navbar remains the same from all pages, simple and easy*/
+    .navbar{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem ;
+        background-color: #d1c0a8;
+    }
+    .home{
+        border: 1px solid grey;
+        background-color: #7FFAF1;
+        border-radius: 3rem;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .about{
+        border: 1px solid grey;
+        background-color: #A2E02D;
+        border-radius: 3rem;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .menu{
+        border: 1px solid grey;
+        background-color:#4700F2;
+        border-radius: 3rem;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .contact{
+        border: 1px solid grey;
+        background-color: #F043A5;
+        border-radius: 3rem;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    ul{
+        display: flex; 
+        list-style: none;
+        }
+        li{
+            padding-right: 4em;
+            transition: all .2s ease-in-out;
+        }
+        li:hover{
+            transform: scale(1.1);
+        }
+    a{
+        font-size: 25px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .scoop img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 5rem;
+    }
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+}
+/*Most of the code for this media querie is the same from other pages*/
+@media screen and (max-width: 920px){
+    body{
+        margin: 0;
+        background-color: #fafafa;
+        padding-bottom: 2rem;
+    } 
+    a:link, a:visited{
+        text-decoration: none; 
+        color: black;
+    }
+    .navbar img{
+        width: 70%;
+    }
+    /*navbar for this had to be changed to vertical as is was the only way to fit all nicely on screen*/
+    .navbar{
+        display:block;
+        text-align: center;
+        padding-top: 1rem;
+        background-color: #d1c0a8;
+    }
+    .home{
+        border: 1px solid grey;
+        background-color: #7FFAF1;
+        border-radius: 3rem;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .about{
+        border: 1px solid grey;
+        background-color: #A2E02D;
+        border-radius: 3rem;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .menu{
+        border: 1px solid grey;
+        background-color:#4700F2;
+        border-radius: 3rem;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .contact{
+        border: 1px solid grey;
+        background-color: #F043A5;
+        border-radius: 3rem;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    ul{
+        display: flex; 
+        list-style: none;
+    }
+    ul{
+        display:grid;
+    }
+    li{
+        padding-bottom: 4rem;
+        font-size: 25px;
+        font-weight: bold;
+        transition: all .2s ease-in-out;
+    }
+    li:hover{
+        transform: scale(1.1);
+    }
+    a{
+        font-size: 25px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .scoop img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 5rem;
+    }
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
